@@ -14,7 +14,7 @@
                         /*---------HEADER ---------*/
    
   .body {
-      background-color: rgb(255, 254, 254);
+      background-color: rgb(129, 128, 128);
       width: 100%;
       
       
@@ -48,7 +48,7 @@
   
   .navbar {
     
-    text-align: center;
+    justify-content:center;
     background-color: #242323;
     margin-bottom: 20px;
 
