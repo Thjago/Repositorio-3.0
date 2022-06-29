@@ -72,6 +72,16 @@
     text-align: center;
 }
 
+@mixin cajitas ($ancho, $alto) {
+
+    height: $alto;
+    width: $ancho;
+}
+
+
+    
+
+
 h2{
 color: rgb(0, 0, 0);
 font-size: 40px;
@@ -89,8 +99,9 @@ padding-top: 40px;
 text-shadow: 2px 2px 2px  rgb(0, 0, 0);
 }
 
-.buzo {
-    width: 49.8%;
+.buzo { 
+
+    @include cajitas(49.8%,)
 
 }
 
@@ -124,8 +135,7 @@ width: 350px;
 
 
 div.galeria img {
-    width: 100%;
-    height: auto;
+    @include cajitas(100%, auto)
 }
 
 
@@ -297,9 +307,8 @@ p {
 }
 
 .pantalon {
+    @extend .buzosproductos
 
-    width: 400px;
-    margin-left: 40px;
 }
 
 
@@ -341,6 +350,18 @@ p {
 grid-area: footer;
 
 }
+
+
+
+/* MAPs */
+
+$colores: (
+
+twitter: #55acee  
+facebook: #3a5795  
+instagram: rgb(143,52,143)
+
+)
 
 
 
